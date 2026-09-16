@@ -1,0 +1,59 @@
+@import "tailwindcss";
+
+@layer base {
+  body {
+    font-family: 'Chivo', -apple-system, BlinkMacSystemFont, sans-serif;
+  }
+}
+
+.font-mono-tech {
+  font-family: 'Space Mono', monospace;
+}
+
+.font-sans-tech {
+  font-family: 'Chivo', sans-serif;
+}
+
+/* Tactical Engineering Console Grid */
+.radar-grid {
+  background-image: 
+    linear-gradient(to right, rgba(18, 43, 29, 0.5) 1px, transparent 1px),
+    linear-gradient(to bottom, rgba(18, 43, 29, 0.5) 1px, transparent 1px);
+  background-size: 32px 32px;
+}
+
+.radar-grid-fine {
+  background-image: 
+    linear-gradient(to right, rgba(20, 52, 34, 0.45) 1px, transparent 1px),
+    linear-gradient(to bottom, rgba(20, 52, 34, 0.45) 1px, transparent 1px);
+  background-size: 20px 20px;
+}
+
+/* Tactical glowing phosphor effects */
+.glow-green-sm {
+  box-shadow: 0 0 8px rgba(5, 255, 161, 0.35);
+}
+
+.glow-green {
+  box-shadow: 0 0 16px rgba(5, 255, 161, 0.4);
+}
+
+.glow-green-text {
+  text-shadow: 0 0 8px rgba(5, 255, 161, 0.6);
+}
+
+/* Custom crisp scrollbar */
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+::-webkit-scrollbar-track {
+  background: #060e09;
+}
+::-webkit-scrollbar-thumb {
+  background: #173824;
+  border-radius: 0px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #05ffa1;
+}
