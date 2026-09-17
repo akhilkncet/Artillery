@@ -1,6 +1,6 @@
 {
   "name": "Shell & Fuze Concept Simulator",
-  "description": "Conceptual engineering simulator for shell trajectory configuration and smart fuze demonstration.",
+  "description": "Tactical HUD and 155mm ERFB artillery shell trajectory simulator with target error radius (CEP) analysis comparing original standard fuze caps against steerable canard PS caps.",
   "requestFramePermissions": [],
   "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
 }

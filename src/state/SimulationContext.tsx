@@ -9,10 +9,14 @@ import { validateConfiguration, ValidationResult } from '../validation/configura
 
 export const DEFAULT_CONFIGURATION: SimulationConfiguration = {
   scenario: {
-    scenarioName: 'Demonstration-01',
+    scenarioName: '155mm ERFB/BB STANAG-4355 Mission',
     scenarioType: 'Standard Demonstration',
     target: 'Target A',
     initialState: 'Nominal',
+    topCap: 'ps_canard_cap',
+    charge: 'charge_d',
+    baseGeometry: 'erfb_bb',
+    quadrantElevationMil: 700,
   },
   navigation: {
     scheme: 'sensor_fusion',
@@ -74,7 +78,7 @@ export const SimulationProvider: React.FC<{ children: ReactNode }> = ({ children
     return DEFAULT_CONFIGURATION;
   });
 
-  const [currentPage, setCurrentPage] = useState<PageId>('configure');
+  const [currentPage, setCurrentPage] = useState<PageId>('simulation');
   const [simulationResult, setSimulationResult] = useState<SimulationResult | null>(() => {
     const engine = new LocalSimulationEngine();
     return engine.runSimulation(DEFAULT_CONFIGURATION);
